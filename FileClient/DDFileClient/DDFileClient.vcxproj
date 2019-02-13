@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B1D45E77-3AEC-48C9-9859-19BF5351AFA0}</ProjectGuid>
+    <RootNamespace>DDFileClient</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>FileClient</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>FileClient</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include_src\tools;..\include_src\grid</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libcd.lib, msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include_src\tools;..\include_src\grid</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\action_check.bmp" />
+    <None Include="res\action_delete.bmp" />
+    <None Include="res\add.bmp" />
+    <None Include="res\b.ico" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\boy.bmp" />
+    <None Include="res\bp_icon.ico" />
+    <None Include="res\bt_icon.ico" />
+    <None Include="res\bw_icon.ico" />
+    <None Include="res\b_1.ico" />
+    <None Include="res\b_V1D_icon.ico" />
+    <None Include="res\DDFileClient.ico" />
+    <None Include="res\DDFileClient.rc2" />
+    <None Include="res\delete.bmp" />
+    <None Include="res\down.bmp" />
+    <None Include="res\empty.bmp" />
+    <None Include="res\folder.bmp" />
+    <None Include="res\gp_icon.ico" />
+    <None Include="res\gt_icon.ico" />
+    <None Include="res\gw_icon.ico" />
+    <None Include="res\g_pcP_icon.ico" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\icon2.ico" />
+    <None Include="res\no.ico" />
+    <None Include="res\play.bmp" />
+    <None Include="res\readonly.bmp" />
+    <None Include="res\refresh.bmp" />
+    <None Include="res\restart.bmp" />
+    <None Include="res\save.bmp" />
+    <None Include="res\stop.bmp" />
+    <None Include="res\tab.bmp" />
+    <None Include="res\tab1.bmp" />
+    <None Include="res\tab3.bmp" />
+    <None Include="res\tab4.bmp" />
+    <None Include="res\timeout.bmp" />
+    <None Include="res\trash.bmp" />
+    <None Include="res\turnblue.bmp" />
+    <None Include="res\turngreen.bmp" />
+    <None Include="res\turnoff.bmp" />
+    <None Include="res\turnon.bmp" />
+    <None Include="res\turnred.bmp" />
+    <None Include="res\unknow.bmp" />
+    <None Include="res\up.bmp" />
+    <None Include="res\uz.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include_src\syslog\SysLogClient.h" />
+    <ClInclude Include="..\include_src\tools\Blocksock.h" />
+    <ClInclude Include="..\include_src\tools\MyThread.h" />
+    <ClInclude Include="DDFileClient.h" />
+    <ClInclude Include="DDFileClientDlg.h" />
+    <ClInclude Include="DFFile.h" />
+    <ClInclude Include="DFLog.h" />
+    <ClInclude Include="DFNet.h" />
+    <ClInclude Include="NotifyDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="zstd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\include_src\syslog\SysLogClient.cpp" />
+    <ClCompile Include="..\include_src\tools\Blocksock.cpp" />
+    <ClCompile Include="..\include_src\tools\MyThread.cpp" />
+    <ClCompile Include="DDFileClient.cpp" />
+    <ClCompile Include="DDFileClientDlg.cpp" />
+    <ClCompile Include="DFFile.cpp" />
+    <ClCompile Include="DFLog.cpp" />
+    <ClCompile Include="DFNet.cpp" />
+    <ClCompile Include="NotifyDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DDFileClient.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="DDFileClient.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

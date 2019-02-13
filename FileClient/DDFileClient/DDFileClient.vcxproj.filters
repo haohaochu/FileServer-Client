@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="原始程式檔">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="原始程式檔\tools">
+      <UniqueIdentifier>{ec16c1b0-3536-4b0e-a562-bfdd812381f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\tools">
+      <UniqueIdentifier>{22eccb55-0482-4b0f-8511-b96e42caf98a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\DDFileClient.rc2">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\DDFileClient.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\bitmap1.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\tab.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\tab1.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\tab3.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\tab4.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\add.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\delete.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\play.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\restart.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\stop.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\readonly.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\folder.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\refresh.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\down.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\up.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\save.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\trash.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\action_check.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\action_delete.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\timeout.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\unknow.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\empty.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\turnblue.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\turngreen.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\turnoff.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\turnon.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\turnred.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\no.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\boy.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\icon2.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\b.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\uz.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\b_1.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\b_V1D_icon.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\g_pcP_icon.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\bp_icon.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\gp_icon.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\bw_icon.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\gw_icon.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\bt_icon.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\gt_icon.ico">
+      <Filter>資源檔</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DDFileClient.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="DDFileClientDlg.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="DFFile.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="DFLog.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="DFNet.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include_src\tools\MyThread.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="NotifyDlg.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include_src\tools\Blocksock.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include_src\syslog\SysLogClient.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DDFileClient.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="DDFileClientDlg.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="DFFile.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="DFLog.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="DFNet.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include_src\tools\MyThread.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="NotifyDlg.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include_src\tools\Blocksock.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include_src\syslog\SysLogClient.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DDFileClient.rc">
+      <Filter>資源檔</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
