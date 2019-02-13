@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="原始程式檔">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="原始程式檔\Grid">
+      <UniqueIdentifier>{b3438b4c-7a4e-485a-9da8-22a1d4b62e3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\Grid">
+      <UniqueIdentifier>{73f86243-9e62-493a-a140-fe73df7ad1cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\tools">
+      <UniqueIdentifier>{9ae52351-1262-4663-9fa7-849a424d0339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\tools">
+      <UniqueIdentifier>{029859e7-59db-41c6-b5a8-a74e365a485b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\MtkFileServer.rc2">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\MtkFileServer.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="resource.hm">
+      <Filter>標頭檔</Filter>
+    </None>
+    <None Include="res\connect.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\refresh.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\save.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\stop.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Lights.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\action_check.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\action_delete.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\tab1.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\tab2.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\tab3.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\tab4.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\delete.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\disconnect.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\search.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\timeout.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\pause.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\play.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\refresh2.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\greenman.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\light.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\redman.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\monitor.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\down.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\trash.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\turnoff.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\turnon.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\turnblue.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\turngreen.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\turnred.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\restart.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\readonly.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\lock.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\bug.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\no.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\bt_icon.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\gt_icon.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\action_error.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\action_unknow.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MtkFileServer.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="MtkFileServerDlg.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="MtkFile.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include_src\Grid\GridCell.h">
+      <Filter>標頭檔\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include_src\Grid\GridCellBase.h">
+      <Filter>標頭檔\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include_src\Grid\GridCtrl.h">
+      <Filter>標頭檔\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include_src\Grid\GridDropTarget.h">
+      <Filter>標頭檔\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include_src\Grid\InPlaceEdit.h">
+      <Filter>標頭檔\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include_src\Grid\InPlaceList.h">
+      <Filter>標頭檔\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include_src\Grid\TitleTip.h">
+      <Filter>標頭檔\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include_src\tools\MyThread.h">
+      <Filter>標頭檔\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include_src\Grid\CellRange.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="DFLog.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="DFNet.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include_src\Grid\MemDC.h">
+      <Filter>標頭檔\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="NotifyDlg.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\zstd\include\zstd.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include_src\syslog\SysLogClient.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MtkFileServer.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="MtkFileServerDlg.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="MtkFile.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include_src\Grid\GridCell.cpp">
+      <Filter>原始程式檔\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include_src\Grid\GridCellBase.cpp">
+      <Filter>原始程式檔\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include_src\Grid\GridCtrl.cpp">
+      <Filter>原始程式檔\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include_src\Grid\GridDropTarget.cpp">
+      <Filter>原始程式檔\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include_src\Grid\InPlaceEdit.cpp">
+      <Filter>原始程式檔\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include_src\Grid\InPlaceList.cpp">
+      <Filter>原始程式檔\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include_src\Grid\TitleTip.cpp">
+      <Filter>原始程式檔\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include_src\tools\MyThread.cpp">
+      <Filter>原始程式檔\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="DFLog.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="DFNet.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="NotifyDlg.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include_src\syslog\SysLogClient.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MtkFileServer.rc">
+      <Filter>資源檔</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

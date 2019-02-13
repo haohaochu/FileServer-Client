@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EBD9B310-27B9-496D-81B8-9F48F19CFE6E}</ProjectGuid>
+    <RootNamespace>MtkFileServer</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>FileServer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <TargetName>FileServer</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions);ZSTD_DLL_IMPORT=1</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include_src\tools;..\include_src\grid</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libcd.lib, msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+      <StackReserveSize>10000000</StackReserveSize>
+      <StackCommitSize>10000000</StackCommitSize>
+      <HeapReserveSize>80000000</HeapReserveSize>
+      <HeapCommitSize>80000000</HeapCommitSize>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include_src\tools;..\include_src\grid</AdditionalIncludeDirectories>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <HeapReserveSize>80000000</HeapReserveSize>
+      <HeapCommitSize>80000000</HeapCommitSize>
+      <StackReserveSize>10000000</StackReserveSize>
+      <StackCommitSize>10000000</StackCommitSize>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="resource.hm" />
+    <None Include="res\action_check.bmp" />
+    <None Include="res\action_delete.bmp" />
+    <None Include="res\action_error.bmp" />
+    <None Include="res\action_unknow.bmp" />
+    <None Include="res\bt_icon.ico" />
+    <None Include="res\bug.bmp" />
+    <None Include="res\connect.bmp" />
+    <None Include="res\delete.bmp" />
+    <None Include="res\disconnect.bmp" />
+    <None Include="res\down.bmp" />
+    <None Include="res\greenman.bmp" />
+    <None Include="res\gt_icon.ico" />
+    <None Include="res\light.bmp" />
+    <None Include="res\Lights.bmp" />
+    <None Include="res\lock.bmp" />
+    <None Include="res\monitor.bmp" />
+    <None Include="res\MtkFileServer.ico" />
+    <None Include="res\MtkFileServer.rc2" />
+    <None Include="res\no.ico" />
+    <None Include="res\pause.bmp" />
+    <None Include="res\play.bmp" />
+    <None Include="res\readonly.bmp" />
+    <None Include="res\redman.bmp" />
+    <None Include="res\refresh.bmp" />
+    <None Include="res\refresh2.bmp" />
+    <None Include="res\restart.bmp" />
+    <None Include="res\save.bmp" />
+    <None Include="res\search.bmp" />
+    <None Include="res\stop.bmp" />
+    <None Include="res\tab1.bmp" />
+    <None Include="res\tab2.bmp" />
+    <None Include="res\tab3.bmp" />
+    <None Include="res\tab4.bmp" />
+    <None Include="res\timeout.bmp" />
+    <None Include="res\trash.bmp" />
+    <None Include="res\turnblue.bmp" />
+    <None Include="res\turngreen.bmp" />
+    <None Include="res\turnoff.bmp" />
+    <None Include="res\turnon.bmp" />
+    <None Include="res\turnred.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\zstd\include\zstd.h" />
+    <ClInclude Include="..\include_src\Grid\CellRange.h" />
+    <ClInclude Include="..\include_src\Grid\GridCell.h" />
+    <ClInclude Include="..\include_src\Grid\GridCellBase.h" />
+    <ClInclude Include="..\include_src\Grid\GridCtrl.h" />
+    <ClInclude Include="..\include_src\Grid\GridDropTarget.h" />
+    <ClInclude Include="..\include_src\Grid\InPlaceEdit.h" />
+    <ClInclude Include="..\include_src\Grid\InPlaceList.h" />
+    <ClInclude Include="..\include_src\Grid\MemDC.h" />
+    <ClInclude Include="..\include_src\Grid\TitleTip.h" />
+    <ClInclude Include="..\include_src\syslog\SysLogClient.h" />
+    <ClInclude Include="..\include_src\tools\MyThread.h" />
+    <ClInclude Include="DFNet.h" />
+    <ClInclude Include="MtkFile.h" />
+    <ClInclude Include="MtkFileServer.h" />
+    <ClInclude Include="MtkFileServerDlg.h" />
+    <ClInclude Include="NotifyDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="DFLog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\include_src\Grid\GridCell.cpp" />
+    <ClCompile Include="..\include_src\Grid\GridCellBase.cpp" />
+    <ClCompile Include="..\include_src\Grid\GridCtrl.cpp" />
+    <ClCompile Include="..\include_src\Grid\GridDropTarget.cpp" />
+    <ClCompile Include="..\include_src\Grid\InPlaceEdit.cpp" />
+    <ClCompile Include="..\include_src\Grid\InPlaceList.cpp" />
+    <ClCompile Include="..\include_src\Grid\TitleTip.cpp" />
+    <ClCompile Include="..\include_src\syslog\SysLogClient.cpp" />
+    <ClCompile Include="..\include_src\tools\MyThread.cpp" />
+    <ClCompile Include="DFLog.cpp" />
+    <ClCompile Include="DFNet.cpp" />
+    <ClCompile Include="MtkFile.cpp" />
+    <ClCompile Include="MtkFileServer.cpp" />
+    <ClCompile Include="MtkFileServerDlg.cpp" />
+    <ClCompile Include="NotifyDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MtkFileServer.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MtkFileServer.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
